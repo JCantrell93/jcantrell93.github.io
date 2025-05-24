@@ -53,7 +53,7 @@ img {
 
 /* Tree image styling (for login screen) */
 .tree-login {
-  max-width: 300px;
+  max-width: 150px;
   margin: 2rem auto 0 auto;
   display: block;
   opacity: 0.9;
