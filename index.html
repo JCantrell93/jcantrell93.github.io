@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Volunteers Familial Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="password-screen">
+    <h1>The Volunteers Familial Directory</h1>
+    <p>Enter the secret password to proceed:</p>
+    <input type="password" id="password-input" placeholder="•••••">
+    <button onclick="checkPassword()">Enter</button>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <h1>Welcome, Volunteer</h1>
+    <img src="image.jpg" alt="Bespoke Reveal" />
+    <div id="audio-container">
+      <iframe
+        id="yt-audio"
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/hw7I2GehPUk?start=15&autoplay=1&loop=1&playlist=hw7I2GehPUk"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
