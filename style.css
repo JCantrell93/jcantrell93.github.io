@@ -1,38 +1,68 @@
+/* Base styles */
 body {
   font-family: 'Georgia', serif;
-  background-color: #eae4d3;
+  background-color: #f4f1e6;
   color: #2e2b29;
   text-align: center;
   padding: 3rem;
+  margin: 0;
 }
 
+/* Title styling */
 h1 {
   font-size: 2.5em;
   font-weight: normal;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
-input {
+/* Input and button */
+input[type="password"] {
   padding: 0.5em;
   font-size: 1em;
   margin-top: 1em;
   border: 2px solid #2e2b29;
   background: #fdfcf5;
+  border-radius: 5px;
+  width: 200px;
 }
 
 button {
   padding: 0.5em 1em;
   font-size: 1em;
-  margin-left: 1em;
+  margin-top: 1em;
+  margin-left: 0.5em;
   background: #2e2b29;
   color: #fff;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
+button:hover {
+  background: #444;
+}
+
+/* Reveal image */
 img {
-  margin-top: 2em;
   max-width: 100%;
+  margin-top: 2em;
   border: 5px double #2e2b29;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Tree image styling (for login screen) */
+.tree-login {
+  max-width: 300px;
+  margin: 2rem auto 0 auto;
+  display: block;
+  opacity: 0.9;
+  filter: grayscale(60%) contrast(90%);
+  box-shadow: none;
+  border: none;
+}
+
+/* Audio container is hidden */
+#audio-container iframe {
+  display: none;
 }
