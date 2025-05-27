@@ -48,26 +48,26 @@ button:hover {
   background: #444;
 }
 
-/* Reveal image styling */
-#main-content img:not(.tree-login) {
-  max-width: 100%;
-  margin-top: 2em;
-  border: 5px double #2e2b29;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Tree styling for password screen */
+/* Tree styling for login screen */
 .tree-login {
-  max-width: 90px;
+  max-width: 130px; /* Slightly larger */
   margin: 2rem auto 0 auto;
   display: block;
-  opacity: 0.7;
+  opacity: 0.85;
   filter: grayscale(60%) contrast(90%);
   box-shadow: none;
   border: none;
 }
 
-/* Hide YouTube audio container */
+/* Image on the reveal page */
+.reveal-image {
+  max-width: 50%; /* 50% size */
+  margin-top: 2rem;
+  border: 5px double #2e2b29;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Hide audio player iframe */
 #audio-container iframe {
   display: none;
 }
