@@ -1,6 +1,6 @@
 function checkPassword() {
   const input = document.getElementById("password-input").value;
-  if (input === "Tibor") {
+  if (input === "St. Peter's") {
     document.getElementById("password-screen").style.display = "none";
     document.getElementById("main-content").style.display = "block";
   } else {
