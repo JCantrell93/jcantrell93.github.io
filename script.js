@@ -1,6 +1,6 @@
 function checkPassword() {
   const input = document.getElementById("password-input").value;
-  if (input === "St. Peter's") {
+  if (input === "The Vatican") {
     document.getElementById("password-screen").style.display = "none";
     document.getElementById("main-content").style.display = "block";
   } else {
@@ -20,3 +20,4 @@ function playMusic() {
     ></iframe>
   `;
 }
+
