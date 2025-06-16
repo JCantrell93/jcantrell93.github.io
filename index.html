@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- PASSWORD SCREEN -->
   <div id="password-screen">
     <h1>The Volunteers Familial Directory</h1>
     <p>Enter the secret password to proceed:</p>
@@ -16,18 +18,49 @@
     <img src="tree_illustration.webp" alt="Tree with Roots" class="tree-login" />
   </div>
 
-<div id="main-content" style="display: none;">
-  <h1>Welcome, Volunteer</h1>
+  <!-- MAIN CONTENT (REVEAL) -->
+  <div id="main-content" style="display: none;">
+    <h1>Welcome, Volunteer</h1>
 
-  <!-- Play Music Button -->
-  <button onclick="playMusic()">Play Theme Music</button>
+    <!-- Music Button -->
+    <button onclick="playMusic()">Play Theme Music</button>
 
-  <!-- Scrapbook Image Row -->
-  <div class="scrapbook">
-    <img src="Map.jpg" alt="Map" class="scrapbook-image left">
-    <img src="image.jpg" alt="Main Reveal" class="scrapbook-image center">
-    <img src="photo.jpg" alt="Photo" class="scrapbook-image right">
+    <!-- Scrapbook Image Layout -->
+    <div class="scrapbook">
+      <img src="Map.jpg" alt="Map" class="scrapbook-image left">
+      <img src="image.jpg" alt="Main Reveal" class="scrapbook-image center">
+      <img src="photo.jpg" alt="Photo" class="scrapbook-image right">
+    </div>
+
+    <!-- Hidden Audio Container -->
+    <div id="audio-container"></div>
   </div>
 
-  <div id="audio-container"></div>
-</div>
+  <!-- JS Script -->
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password-input").value;
+      if (input === "The Vatican") {
+        document.getElementById("password-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      } else {
+        alert("Incorrect password. Try again.");
+      }
+    }
+
+    function playMusic() {
+      const container = document.getElementById("audio-container");
+      container.innerHTML = `
+        <iframe
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/hw7I2GehPUk?start=15&autoplay=1&loop=1&playlist=hw7I2GehPUk"
+          frameborder="0"
+          allow="autoplay"
+        ></iframe>
+      `;
+    }
+  </script>
+</body>
+</html>
+
