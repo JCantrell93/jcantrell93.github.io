@@ -1,4 +1,4 @@
-/* Base styles */
+/* Base Styles */
 body {
   font-family: 'Georgia', serif;
   background-color: #f4f1e6;
@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* Title styling */
+/* Headings */
 h1 {
   font-size: 2.5em;
   font-weight: normal;
@@ -16,14 +16,14 @@ h1 {
   letter-spacing: 1px;
 }
 
-/* Input and button container */
+/* Input + Button on Login Screen */
 #password-screen input,
 #password-screen button {
   display: block;
   margin: 1rem auto;
 }
 
-/* Password input */
+/* Password Input */
 input[type="password"] {
   padding: 0.5em;
   font-size: 1em;
@@ -33,7 +33,7 @@ input[type="password"] {
   width: 200px;
 }
 
-/* Button */
+/* Button Styling */
 button {
   padding: 0.5em 1em;
   font-size: 1em;
@@ -42,15 +42,16 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 button:hover {
   background: #444;
 }
 
-/* Tree styling for login screen */
+/* Tree Illustration on Login Page */
 .tree-login {
-  max-width: 130px; /* Slightly larger */
+  max-width: 130px;
   margin: 2rem auto 0 auto;
   display: block;
   opacity: 0.85;
@@ -59,15 +60,46 @@ button:hover {
   border: none;
 }
 
-/* Image on the reveal page */
-.reveal-image {
-  max-width: 50%; /* 50% size */
+/* Scrapbook Image Layout */
+.scrapbook {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
-  border: 5px double #2e2b29;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Hide audio player iframe */
+/* Scrapbook Image Styles */
+.scrapbook-image {
+  width: 30%;
+  max-width: 250px;
+  background-color: #fffbe6;
+  padding: 0.5rem;
+  border: 4px solid #2e2b29;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.scrapbook-image:hover {
+  transform: scale(1.03);
+}
+
+/* Scrapbook Image Rotations */
+.scrapbook-image.left {
+  transform: rotate(-3deg);
+}
+
+.scrapbook-image.center {
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.scrapbook-image.right {
+  transform: rotate(3deg);
+}
+
+/* Hide Audio Iframe */
 #audio-container iframe {
   display: none;
 }
